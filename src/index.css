@@ -1,13 +1,117 @@
-body {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Itim, Arial, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: #be93c5;
+  background: -webkit-gradient(linear, left top, right top, from(#7bc6cc), to(#be93c5));
+  background: linear-gradient(to right, #7bc6cc, #be93c5);
 }
+
+.App {
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 30rem;
+}
+
+.App span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em 1em;
+}
+
+.header > button {
+  width: 5rem;
+}
+
+.todolist-wrapper li {
+  list-style: none;
+  margin: 2em;
+}
+
+.todolist-wrapper li h3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+form {
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form input {
+  padding: 0.5em;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+form button {
+  padding: 0.5em;
+  width: 5rem;
+  height: 2rem;
+  margin: 0 auto;
+}
+
+form ::-webkit-input-placeholder {
+  color: gray;
+}
+
+form :-ms-input-placeholder {
+  color: gray;
+}
+
+form ::-ms-input-placeholder {
+  color: gray;
+}
+
+form ::placeholder {
+  color: gray;
+}
+
+i {
+  cursor: pointer;
+  color: red;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: cornflowerblue;
+}
+/*# sourceMappingURL=index.css.map */
